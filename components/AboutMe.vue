@@ -5,7 +5,6 @@
         About Me
       </h2>
       <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
-        <ChatTextWriting />
         <blockquote class="rounded-lg bg-gray-100 p-8">
           <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
             Hello and welcome to my page! My name is Mengyi and I’m a frontend developer in Phnom Penh City.
