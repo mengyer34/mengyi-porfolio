@@ -5,6 +5,7 @@
     <AboutMe/>
     <Projects/>
     <ContactMe/>
+    <TheFooter />
   </div>
 </template>
 

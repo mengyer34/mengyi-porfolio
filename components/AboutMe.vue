@@ -1,28 +1,87 @@
 <template>
-  <section class="bg-white">
+  <section>
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
       <h2 class="underline-style text-center text-3xl font-bold tracking-tight sm:text-4xl">
         About Me
       </h2>
-      <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
-        <blockquote class="rounded-lg bg-gray-100 p-8">
-          <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+        <blockquote class="rounded-lg p-8">
+          <p class="mt-4 text-gray-500">
             Hello and welcome to my page! My name is Mengyi and I’m a frontend developer in Phnom Penh City.
           </p>
-          <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+          <p class="mt-4 text-gray-500">
             I graduated from Passerellesnumeriques Cambodia (PNC) with an associate degree in Web Programming and have been working on professional frontend development for over a year now. I specialize in building modern and responsive websites using the latest front-end technologies.
           </p>
-          <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
-            As a frontend developer, my focus is on delivering clean, user-friendly, and visually appealing designs. I’m an expert in HTML5, CSS3, and JavaScript, and have experience working with front-end frameworks like React, and Vue.
+          <p class="mt-4 text-gray-500">
+            As a frontend developer, my focus is on delivering clean, user-friendly, and visually appealing designs. I’m an expert in :
           </p>
-          <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
-            In my free time, I enjoy attending tech conferences and collaborating on open-source projects. Recently, I’ve been exploring the world of UI/UX design to enhance my knowledge and understanding of user behavior.
-          </p>
-          <p class="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
-            I created this page as a platform to showcase my work and connect with potential clients. Whether you’re a company looking for a new website, an agency in need of a frontend developer, or an individual with a project idea, I’m here to help. Feel free to reach out and let’s talk about your needs and how I can help bring your project to life.
-          </p>
+          <div class="mt-4 text-gray-500 grid grid-cols-2 lg:grid-cols-4 gap-3">
+            <a href="https://nuxt.com/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7 mt-2">
+                <img src="../assets/img/nuxt-logo.png" alt="nuxt">
+              </div>
+              <p>Nuxtjs</p>
+            </a>
+            <a href="https://vuejs.org/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7 mt-2">
+                <img src="../assets/img/vue.png" alt="vue">
+              </div>
+              <p>Vuejs</p>
+            </a>
+            <a href="https://nextjs.org/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7">
+                <img src="../assets/img/nextjs.png" alt="next">
+              </div>
+              <p>Nextjs</p>
+            </a>
+            <a href="https://react.dev/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7">
+                <img src="../assets/img/reactjs.png" alt="react">
+              </div>
+              <p>Reactjs</p>
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7 mt-2">
+                <img src="../assets/img/tailwind.png" alt="tailwind">
+              </div>
+              <p>Tailwind</p>
+            </a>
+            <a href="https://getbootstrap.com/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7">
+                <img src="../assets/img/bootstrap.png" alt="bootstrap">
+              </div>
+              <p>Bootstrap</p>
+            </a>
+            <a href="https://www.w3schools.com/html/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7 my-1">
+                <img src="../assets/img/html.png" alt="html">
+              </div>
+              <p>HTML</p>
+            </a>
+            <a href="https://www.w3schools.com/css/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7 my-1">
+                <img src="../assets/img/css.png" alt="css">
+              </div>
+              <p>CSS</p>
+            </a>
+            <a href="https://www.w3schools.com/js/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="w-7 h-7 my-1">
+                <img src="../assets/img/js.png" alt="js">
+              </div>
+              <p>JavaScript</p>
+            </a>
+          </div>
+          
         </blockquote> 
+        <div class="box-shadow-style rounded-lg bg-gray-100 p-2 w-full lg:w-10/12 h-fit lg:mt-12">
+          <img src="../assets/img/mengyi.jpg" alt="Mengyi">
+        </div>
       </div>
     </div>
   </section>
-  </template>
+</template>
+<style>
+.box-shadow-style {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+</style>
