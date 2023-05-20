@@ -14,43 +14,43 @@
             <nav aria-label="Site Nav" class="hidden md:block">
             <ul class="flex items-center gap-6 text-sm">
                 <li>
-                <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="/"
+                <div
+                    class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                    @click="changePage('about-page')"
                 >
                     <span class="text-primary">0.</span>
                     About
-                </a>
+                </div>
                 </li>
 
                 <li>
-                <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="/"
+                <div
+                    class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                    @click="changePage('project-page')"
                 >
                     <span class="text-primary">1.</span>
                     Projects
-                </a>
+                </div>
                 </li>
 
                 <li>
-                <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="/"
+                <div
+                    class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                    @click="changePage('contact-page')"
                 >
                     <span class="text-primary">2.</span>
                     Contact
-                </a>
+                </div>
                 </li>
 
                 <li>
-                <a
-                    class="text-gray-500 transition hover:text-gray-500/75"
-                    href="/"
+                <div
+                    class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                    @click="changePage('blog-page')"
                 >
                     <span class="text-primary">3.</span>
                     Blog
-                </a>
+                </div>
                 </li>
             </ul>
             </nav>
@@ -62,43 +62,43 @@
                 <nav aria-label="Site Nav" class="block md:hidden fixed z-[99999] bg-white w-[100%] h-screen top-0 p-10 shadow-md" :class="isOpen ? 'slide-left': 'slide-right'">
                 <ul class="flex flex-col items-start gap-6 text-base">
                     <li>
-                    <a
-                        class="text-gray-500 transition hover:text-gray-500/75"
-                        href="/"
+                    <div
+                        class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                        @click="changePage('about-page')"
                     >
                         <span class="text-primary">0.</span>
                         About
-                    </a>
+                    </div>
                     </li>
     
                     <li>
-                    <a
-                        class="text-gray-500 transition hover:text-gray-500/75"
-                        href="/"
+                    <div
+                        class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                        @click="changePage('project-page')"
                     >
                         <span class="text-primary">1.</span>
                         Projects
-                    </a>
+                    </div>
                     </li>
     
                     <li>
-                    <a
-                        class="text-gray-500 transition hover:text-gray-500/75"
-                        href="/"
+                    <div
+                        class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                        @click="changePage('contact-page')"
                     >
                         <span class="text-primary">2.</span>
                         Contact
-                    </a>
+                    </div>
                     </li>
     
                     <li>
-                    <a
-                        class="text-gray-500 transition hover:text-gray-500/75"
-                        href="/"
+                    <div
+                        class="text-gray-500 transition hover:text-gray-500/75 cursor-pointer"
+                        @click="changePage('blog-page')"
                     >
                         <span class="text-primary">3.</span>
                         Blog
-                    </a>
+                    </div>
                     </li>
                 </ul>
                 </nav>
@@ -158,6 +158,10 @@ export default {
 
         this.scrollPosition = window.scrollY
         }
+    },
+    changePage(id){
+      const element = document.getElementById(id);
+      element.scrollIntoView({behavior: "smooth"});
     }
   },
   created() {

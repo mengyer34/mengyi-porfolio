@@ -13,9 +13,34 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.underline-style {
+/* .underline-style {
   -webkit-text-decoration: underline wavy #20a7d8;
   text-decoration: underline wavy #20a7d8;
+} */
+.wavy {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  margin: auto;
+  overflow: hidden;
+}
+.wavy:before {
+  content: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  font-size: 20px;
+  color: transparent;
+  text-decoration-style: wavy;
+  text-decoration-color: #20a7d8;
+  text-decoration-line: underline;
+  animation-iteration-count:infinite;
+  animation: wavy 2s linear infinite;
+}
+@keyframes wavy {
+	to {
+		margin-left: -51%;
+	}
 }
 
 *.unselectable {

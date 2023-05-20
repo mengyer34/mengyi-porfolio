@@ -1,10 +1,14 @@
 <template>
-  <section>
+  <section id="about-page">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-      <h2 class="underline-style text-center text-3xl font-bold tracking-tight sm:text-4xl">
+      <h2 class=" text-center text-3xl font-bold sm:text-4xl">
         About Me
+        <div class="wavy"></div>
       </h2>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+        <div class="box-shadow-style rounded-lg bg-gray-100 p-2 w-full md:hidden h-fit mt-12">
+          <img src="../assets/img/mengyi.jpg" alt="Mengyi">
+        </div>
         <blockquote class="rounded-lg p-8">
           <p class="mt-4 text-gray-500">
             Hello and welcome to my page! My name is Mengyi and I’m a frontend developer in Phnom Penh City.
@@ -16,56 +20,56 @@
             As a frontend developer, my focus is on delivering clean, user-friendly, and visually appealing designs. I’m an expert in :
           </p>
           <div class="mt-4 text-gray-500 grid grid-cols-2 lg:grid-cols-4 gap-3">
-            <a href="https://nuxt.com/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7 mt-2">
+            <a href="https://nuxt.com/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px]">
                 <img src="../assets/img/nuxt-logo.png" alt="nuxt">
               </div>
               <p>Nuxtjs</p>
             </a>
-            <a href="https://vuejs.org/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7 mt-2">
+            <a href="https://vuejs.org/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px]">
                 <img src="../assets/img/vue.png" alt="vue">
               </div>
               <p>Vuejs</p>
             </a>
-            <a href="https://nextjs.org/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7">
+            <a href="https://nextjs.org/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px]">
                 <img src="../assets/img/nextjs.png" alt="next">
               </div>
               <p>Nextjs</p>
             </a>
-            <a href="https://react.dev/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7">
+            <a href="https://react.dev/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px]">
                 <img src="../assets/img/reactjs.png" alt="react">
               </div>
               <p>Reactjs</p>
             </a>
-            <a href="https://tailwindcss.com/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7 mt-2">
+            <a href="https://tailwindcss.com/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px]">
                 <img src="../assets/img/tailwind.png" alt="tailwind">
               </div>
               <p>Tailwind</p>
             </a>
-            <a href="https://getbootstrap.com/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7">
+            <a href="https://getbootstrap.com/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px]">
                 <img src="../assets/img/bootstrap.png" alt="bootstrap">
               </div>
               <p>Bootstrap</p>
             </a>
-            <a href="https://www.w3schools.com/html/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7 my-1">
+            <a href="https://www.w3schools.com/html/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px] my-1">
                 <img src="../assets/img/html.png" alt="html">
               </div>
               <p>HTML</p>
             </a>
-            <a href="https://www.w3schools.com/css/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7 my-1">
+            <a href="https://www.w3schools.com/css/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px] my-1">
                 <img src="../assets/img/css.png" alt="css">
               </div>
               <p>CSS</p>
             </a>
-            <a href="https://www.w3schools.com/js/" target="_blank" class="rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
-              <div class="w-7 h-7 my-1">
+            <a href="https://www.w3schools.com/js/" target="_blank" class="h-[46px] rounded-md bg-gray-100 p-1 flex items-center gap-x-2 justify-center">
+              <div class="max-w-[28px] max-h-[28px] my-1">
                 <img src="../assets/img/js.png" alt="js">
               </div>
               <p>JavaScript</p>
@@ -73,7 +77,7 @@
           </div>
           
         </blockquote> 
-        <div class="box-shadow-style rounded-lg bg-gray-100 p-2 w-full lg:w-10/12 h-fit lg:mt-12">
+        <div class="box-shadow-style rounded-lg bg-gray-100 p-2 w-full hidden md:block lg:w-10/12 h-fit md:mt-12">
           <img src="../assets/img/mengyi.jpg" alt="Mengyi">
         </div>
       </div>

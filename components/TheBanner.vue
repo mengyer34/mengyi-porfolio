@@ -18,8 +18,10 @@
         I am always looking to improve my skills and stay up to date with the latest web development technologies and best practices.
       </p>
 
-      <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <button-main :title="'Contact Me'"></button-main>
+      <div class="mt-8 flex flex-wrap justify-center gap-4" >
+        <div  @click="changePage('contact-page')">
+          <button-main :title="'Contact Me'"></button-main>
+        </div>
       </div>
     </div>
   </div>
@@ -29,7 +31,14 @@
 import ButtonMain from './ButtonMain.vue'
 export default {
   components: { ButtonMain },
-    name: 'TheBanner'
+  name: 'TheBanner',
+  methods: {
+    changePage(id){
+      console.log(' helerkjer')
+      const element = document.getElementById(id);
+      element.scrollIntoView({behavior: "smooth"});
+    }
+  }
 }
 </script>
 <style scoped>

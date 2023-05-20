@@ -1,8 +1,9 @@
 <template>
-<section class="bg-white">
+<section id="project-page" class="bg-white">
   <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-    <h2 class="underline-style text-center text-3xl font-bold tracking-tight sm:text-4xl">
+    <h2 class=" text-center text-3xl font-bold tracking-tight sm:text-4xl">
       Projects
+      <div class="wavy"></div>
     </h2>
 
     <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">

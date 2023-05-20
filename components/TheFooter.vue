@@ -3,3 +3,16 @@
         @2023 Mengyi YOENG
     </div>
 </template>
+<script>
+export default {
+    head() {
+      return {
+        script: [
+          {
+            src: 'https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'
+          }
+        ],
+      }
+    }
+}
+</script>
