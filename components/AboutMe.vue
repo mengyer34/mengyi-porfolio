@@ -1,5 +1,5 @@
 <template>
-  <section id="about-page" class="relative">
+  <section id="about-page" class="relative overflow-hidden">
     <div class="absolute opacity-10 md:top-10 bottom-0">
       <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_fifomona.json" mode="bounce" background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
     </div>
