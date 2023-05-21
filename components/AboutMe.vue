@@ -1,12 +1,15 @@
 <template>
-  <section id="about-page">
+  <section id="about-page" class="relative">
+    <div class="absolute opacity-10 md:top-10 bottom-0">
+      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_fifomona.json" mode="bounce" background="transparent"  speed="1"  style="width: 500px; height: 500px;"  loop  autoplay></lottie-player>
+    </div>
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
       <h2 class=" text-center text-3xl font-bold sm:text-4xl">
         About Me
         <div class="wavy"></div>
       </h2>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
-        <div class="box-shadow-style rounded-lg bg-gray-100 p-2 w-full md:hidden h-fit mt-12">
+        <div class="img-border-style w-full md:hidden h-fit mt-12">
           <img src="../assets/img/mengyi.jpg" alt="Mengyi">
         </div>
         <blockquote class="rounded-lg p-8">
@@ -77,7 +80,7 @@
           </div>
           
         </blockquote> 
-        <div class="box-shadow-style rounded-lg bg-gray-100 p-2 w-full hidden md:block lg:w-10/12 h-fit md:mt-12">
+        <div class="img-border-style w-full hidden md:block lg:w-10/12 h-fit md:mt-12">
           <img src="../assets/img/mengyi.jpg" alt="Mengyi">
         </div>
       </div>
@@ -87,5 +90,36 @@
 <style>
 .box-shadow-style {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.img-border-style {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 26px auto 0;
+  max-width: 550px;
+  min-height: 300px;
+  padding: 16px;
+  position: relative;
+  width: 80%;
+}
+.img-border-style:before, .img-border-style:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.img-border-style:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+.img-border-style:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
 }
 </style>

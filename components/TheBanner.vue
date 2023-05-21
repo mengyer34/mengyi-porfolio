@@ -3,6 +3,9 @@
   <div
     class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center z-[9999]"
   >
+  <div class="absolute right-20 opacity-50 bottom-0">
+    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_WdTEui.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+  </div>
     <div class="mx-auto max-w-xl text-center">
       <h1 class="text-3xl font-extrabold sm:text-5xl">
         Hello 👋 I'm
